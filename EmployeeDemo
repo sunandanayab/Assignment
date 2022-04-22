@@ -1,1 +1,37 @@
+class C1
+{
+int a;
+void disp()
+{
+System.out.println("C1---DISP()");
+}
+}
+class C2 extends C1
+{
+int b;
+void show()
+{
+disp();
+System.out.println("C2-----SHOW()");
+a=100;
+b=200;
+System.out.println("value of a="+a);
+System.out.println("value of b="+b);
+}
+}
 
+
+class IntProg1
+{
+public static void main(String [] args)
+{
+System.out.println("w.r.t c2---DC");
+System.out.println("-------------");
+C2 o2=new C2();
+o2.show();
+System.out.println("w.r.t c1--BC");
+System.out.println("-------------");
+C1 o1=new C1();
+o1.disp();
+}
+}
