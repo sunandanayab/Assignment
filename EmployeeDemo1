@@ -8,30 +8,30 @@ class Account extends Employee  //INHERITANCE
 {
 double id;
 long jd;
-long mn;
+long mobilenumber;
 float bal;
 String name,eid,bname;
 private int acno;  //DATA ENCAPSULATION
 private int pin;
 void details()
 {
-Scanner s=new Scanner(System.in);
+Scanner scan=new Scanner(System.in);
 System.out.println("Account Number");
-int acno=Integer.parseInt(s.nextLine());
+int acno=Integer.parseInt(scan.nextLine());
 System.out.println("Enter Name");
 String name=s.nextLine();
 System.out.println("Enter Balance");
-float bal=Float.parseFloat(s.nextLine());
+float bal=Float.parseFloat(scan.nextLine());
 System.out.println("Enter PIN");
-int pin=Integer.parseInt(s.nextLine());
+int pin=Integer.parseInt(scan.nextLine());
 System.out.println("Enter Branch Name");
-String bname=s.nextLine();
+String bname=scan.nextLine();
 System.out.println("Enter Employee ID");
-double id=Double.parseDouble(s.nextLine());
+double id=Double.parseDouble(scan.nextLine());
 System.out.println("Enter a mobile number");
-long mn=Long.parseLong(s.nextLine());
+long mn=Long.parseLong(scan.nextLine());
 System.out.println("Enter Email-ID");
-String eid=s.nextLine();
+String eid=scan.nextLine();
 System.out.println("-----------------");
 System.out.println("Employee Details");
 System.out.println("-----------------");
@@ -41,7 +41,7 @@ System.out.println("Account Balance="+bal);
 System.out.println("Password="+pin);
 System.out.println("Branch Name="+bname);
 System.out.println("Identity Number="+id);
-System.out.println("Mobile Number="+mn);
+System.out.println("Mobile Number="+mobilenumber);
 System.out.println("Email id="+eid);
 }
 }
