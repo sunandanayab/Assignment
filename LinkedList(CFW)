@@ -1,0 +1,31 @@
+//LinkedListDemo.java
+import java.util.LinkedList;
+import java.util.List;
+class LinkedListDemo
+{
+public static void main(String [] args)
+{
+List ll=new LinkedList();
+System.out.println("Size of linkedlist="+ll.size());
+System.out.println("Content of linkedlist="+ll);
+//add the data to all
+ll.add(10);
+ll.add(12.45);
+ll.add('A');
+ll.add(true);
+ll.add("java");
+System.out.println("Size of linkedlist="+ll.size());
+System.out.println("Contenet of lnkedlist="+ll);
+ll.add(10);
+System.out.println("-----------------------------");
+System.out.println("Element of linkedlist");
+System.out.println("-----------------------------");
+Object obj[]=ll.toArray();
+for (Object x:obj)
+{
+System.out.println("type="+x.getClass()+"\tValue="+x);
+System.out.println("\t"+x);
+}//for
+System.out.println("-------------------------------");
+}
+}
