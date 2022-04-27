@@ -1,0 +1,59 @@
+//Employee3.java
+package ep;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Employee3
+{
+public ArrayList getEmpDet()
+{
+Scanner scan=new Scanner(System.in);
+System.out.println("Enter Emp Number:");
+int eno=Integer.parseInt(scan.nextLine());
+System.out.println("Enter Emp Name");
+String name=scan.nextLine();
+System.out.println("Enter Employee Salary");
+float sal=Float.parseFloat(scan.nextLine());
+System.out.println("Enter Employee Designation");
+String dsg=scan.nextLine();
+//To return all values of Emp, we add all these values to CFW object
+ArrayList al=new ArrayList();
+//add Emp Values to al
+al.add("Emp Number:"+eno);
+al.add("Emp Name="+name);
+al.add("Emp Salary="+sal);
+al.add("Emp Designation="+dsg);
+return al;
+}
+public void dispEmpData(ArrayList ao)
+{
+System.out.println("-------------------");
+System.out.println("\t Employee Data");
+Object obj[]=ao.toArray();
+for (Object x:obj)
+{
+System.out.println("\t"+x);
+}
+System.out.println("-----------------------");
+}
+}
+
+
+
+
+
+
+
+//main class of arraylist concept
+
+//EmpDemo.java
+import java.util.ArrayList;
+import ep.Employee3;
+class EmpDemo
+ {
+public static void main(String [] args)
+{
+Employee3 emp=new Employee3();
+ArrayList al=emp.getEmpDet();
+emp.dispEmpData(al);
+}
+}
